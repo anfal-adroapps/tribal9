@@ -139,6 +139,15 @@
     height: 200px;
     width: 200px;
   }
+  .slider-content{
+    text-align: center;
+  }
+}
+@media screen and (max-width:500px) {
+  .categorySection .categoryBox{
+    height: 160px;
+    width: 160px;
+  }
 }
 .categoryBox img{
   margin: auto;
@@ -271,6 +280,14 @@ line-height: 150%;
   }
   .aboutMain .aboutBoxLeft{
     text-align: center;
+  }
+  .aboutMain img.aboutImg{
+    height: 80%;
+    width: 80%;
+  }
+  .aboutMain .row{
+    padding-top: 120px !important;
+    padding-bottom: 20px !important;
   }
 }
 .aboutImgBox img{
