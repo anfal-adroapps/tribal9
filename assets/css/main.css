@@ -156,9 +156,10 @@
   background-color: #451684;
   text-align: center;
   height: 50%;
+  padding: 50px 0px;
 }
 .boxTop img{
-  margin-top: 25px;
+  margin: auto;
 }
 .boxTop h2{
   color: #FFF;
@@ -178,7 +179,12 @@ font-style: normal;
 font-weight: 600;
 margin-top: 5px
 }
-
+@media screen and (max-width:749px) {
+  .boxTop{
+    height: max-content;
+    padding: 5px 0px;
+  }
+}
 /* about css */
 
 .aboutBtn{
