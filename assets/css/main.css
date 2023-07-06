@@ -1,13 +1,3 @@
-/*-----------------------------------------------------------------------------------
-
-    Template Name: Shofy - Multipurpose eCommerce HTML Template
-    Author: Theme_Pure
-    Support: basictheme400@gmail.com
-    Description: Shofy - Multipurpose eCommerce HTML Template
-    Version: 1.0
-
------------------------------------------------------------------------------------
-
 /************ TABLE OF CONTENTS ***************
 
 	-----------------
@@ -140,6 +130,16 @@
   height: 250px;
   width: 250px
 }
+@media screen and (max-width:749px) {
+  .categorySection{
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+  }
+  .categorySection .categoryBox{
+    height: 200px;
+    width: 200px;
+  }
+}
 .categoryBox img{
   margin: auto;
 }
@@ -198,13 +198,17 @@ margin-top: 5px
 .hivText{
   color: #FFF;
 text-align: center;
-font-size: 48px;
 font-family: Montserrat;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
 }
 
+/* browse css */
+.browseBox img{
+  height: 100%;
+  width: 100%;
+}
 /* follow us css */
 .followUsBox{
   background-color: #451684;
@@ -250,6 +254,29 @@ font-weight: 400;
 line-height: 150%;
 }
 
+/* ABOUT PAGE CSS START */
+.aboutMain{
+  background-color: #451684;
+  padding: 100px 0px;
+  height: 400px;
+  margin-bottom: 200px;
+}
+.aboutBoxLeft h2, .aboutBoxLeft p{
+  color: white !important;
+}
+@media screen and (max-width:749px) {
+  .aboutMain{
+    height: max-content;
+    margin-bottom: 0;
+  }
+  .aboutMain .aboutBoxLeft{
+    text-align: center;
+  }
+}
+.aboutImgBox img{
+  height: 100%;
+  width: 100%;
+}
 @import url("https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Jost:wght@300;400;500;600;700&family=Oregano&family=Roboto:wght@300;400;500;700;900&display=swap");
 .tp-coupon-info-details span, .tp-collection-hotspot-content, .tp-return-customer-forgot a::after, .tp-cart-checkout-shipping-option label::after, .tp-cart-checkout-shipping-option label::before, .tp-cart-plus,
 .tp-cart-minus, .tp-shop-widget-categories ul li a::after, .tp-shop-widget-categories ul li a span, .tp-shop-widget-checkbox-circle-number, .tp-product-details-thumb-wrapper .nav-tabs .nav-link::after, .tp-product-details-review-input-eye span, .tp-product-details-tab-line, .tp-product-sm-item-5, .tp-product-sm-thumb-5 img, .tp-product-action-4, .tp-product-thumb-4 img, .tp-product-price-4, .tp-product-add-to-cart-4, .tp-product-price-wrapper-4, .tp-best-add-to-cart-btn, .tp-product-tag-3 span, .tp-product-thumb-3 img, .tp-product-action-3, .tp-special-hotspot-content, .tp-product-tag-2 a::after, .tp-product-action-2, .tp-product-thumb-2 img, .tp-product-thumb img, .tp-product-tab-line, .tp-product-action, .tp-product-add-cart-btn-large-wrapper, .tp-product-list-thumb a img, .tp-product-tooltip, .tp-product-category-thumb a img, .tp-category-title-2, .tp-category-btn-2, .tp-category-content-2 span, .tp-category-content-2::after, .tp-category-thumb-3::after, .tp-category-thumb-3::before, .tp-category-btn-3, .tp-category-price-4, .tp-category-thumb-5, .tp-work-item, .tp-work-icon span, .tp-history-nav-year::after, .profile__tab .tp-tab-line, .profile__main-thumb-edit label, .tp-profile-input-eye span, .tp-contact-input-eye span, .tp-contact-btn, .tp-login-top p a::after, .tp-login-mail::after, .tp-login-input-eye span, .tp-login-forgot a::after, .tp-cta-thumb img, .tp-brand-item img, .tp-instagram-item::after, .tp-instagram-item-2::after, .tp-instagram-icon, .tp-instagram-icon-2, .tp-slider-nav-item, .tp-footer-widget-content ul li a::after, .tp-blog-grid-thumb img, .tp-blog-list-thumb img, .tp-blog-thumb-2 img, .tp-blog-meta-2 a::after, .tp-postbox-details-input-eye span, .tp-category-menu nav ul li::after, .tp-category-menu nav ul li.has-dropdown > a:not(.mega-menu-title)::after, .tp-category-menu nav ul li a span, .tp-category-mobile-menu ul li.has-dropdown > a .dropdown-toggle-btn, .tp-category-mobile-menu ul li.has-dropdown > a .dropdown-toggle-btn i, .tp-mobile-menu, .tp-main-menu-mobile ul li.has-dropdown > a .dropdown-toggle-btn, .tp-main-menu-mobile ul li.has-dropdown > a .dropdown-toggle-btn i, .main-menu > nav > ul > li.has-dropdown > a::after, .main-menu > nav > ul > li > .tp-submenu li.has-dropdown > a::after, .main-menu > nav > ul > li .tp-mega-menu, .home-menu-thumb, .home-menu-thumb::after, .shop-mega-menu-img img, .tp-header-side-menu ul li.has-dropdown > a::after, .tp-header-side-menu ul li .mega-menu, .tp-header-side-menu ul li .mega-menu .mega-menu-brand a img, .tp-menu-line, .tp-search-area, .tp-product-tab-2 .nav-tabs .nav-link .tp-product-tab-tooltip, .tp-tab-line, .offcanvas__categoryssss ul li.has-dropdown > a .dropdown-toggle-btn, .offcanvas__categoryssss ul li .mega-menu, .offcanvas__categoryssss ul li .mega-menu .mega-menu-brand a img, .offcanvas__lang-selected-lang, .offcanvas__lang-selected-currency, .offcanvas__currency-selected-lang, .offcanvas__currency-selected-currency, .offcanvas__lang-selected-lang::after, .offcanvas__lang-selected-currency::after, .offcanvas__currency-selected-lang::after, .offcanvas__currency-selected-currency::after, .offcanvas__lang-list, .offcanvas__currency-list, .tp-swiper-dot .swiper-pagination-bullet, .tp-swiper-dot-border .swiper-pagination-bullet, .tp-swiper-scrollbar, .tp-pulse-border::after, .tp-pulse-border::before, .tp-link-btn-2::after, .tp-link-btn-2::before, .tp-link-btn-line::after, .tp-link-btn-line-2::after {
@@ -6735,9 +6762,6 @@ body .ui-tooltip {
 }
 .tp-header-style-transparent-white .tp-header-top-menu-item ul li a:hover {
   color: var(--tp-theme-secondary);
-}
-.tp-header-bottom-3 {
-  /* border-bottom: 1px solid rgba(255, 255, 255, 0.14); */
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .tp-header-bottom-3 {
