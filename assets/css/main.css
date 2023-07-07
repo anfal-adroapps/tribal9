@@ -309,6 +309,9 @@ line-height: normal;
   color: white;
   padding: 30px;
 }
+.fuSection{
+  margin: 200px 0;
+}
 .followUsBox h2{
   color: #FFF;
 font-size: 50px;
@@ -318,11 +321,13 @@ font-weight: 700;
 line-height: 48px;
 letter-spacing: 0.2px;
 }
-@media screen and (max-width:749px) {
-  .followUsBox h2{
-    font-size: 36px;
-    text-align: center;
-  }
+.followUsBox .imgDiv{
+  position: absolute;
+  height: 100%;
+  margin-top: -10%;
+}
+.followUsBox .fuContent{
+  margin: 15% 0;
 }
 .fuBtn:hover{
   background-color: #141414;
@@ -343,6 +348,16 @@ letter-spacing: 0.2px;
   }
   .followUsBox{
     text-align: center;
+  }
+  .followUsBox h2.uniH2{
+    margin-top: 0;
+  }
+  .followUsBox .imgDiv{
+    position: static;
+    margin-top: 0;
+  }
+  .fuSection{
+    margin: 0;
   }
 }
 /* map css start */
