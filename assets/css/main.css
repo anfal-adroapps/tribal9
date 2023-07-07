@@ -289,6 +289,19 @@ line-height: normal;
   height: 100%;
   width: 100%;
 }
+
+/* testimonial cs */
+
+.testiCustomContainer .box{
+  height: 250px;
+  width: 250px;
+  background-color: #010F1C;
+  /* padding: 0; */
+  margin: 0px 50px;
+  display: inline-block;
+
+}
+
 /* follow us css */
 .followUsBox{
   background-color: #451684;
@@ -298,12 +311,18 @@ line-height: normal;
 }
 .followUsBox h2{
   color: #FFF;
-font-size: 36px;
+font-size: 50px;
 font-family: Outfit;
 font-style: normal;
 font-weight: 700;
 line-height: 48px;
 letter-spacing: 0.2px;
+}
+@media screen and (max-width:749px) {
+  .followUsBox h2{
+    font-size: 36px;
+    text-align: center;
+  }
 }
 .fuBtn:hover{
   background-color: #141414;
@@ -317,7 +336,15 @@ letter-spacing: 0.2px;
   color: white;
   padding: 10px 15px;
 }
-
+@media screen and (max-width:749px) {
+  .followUsBox h2{
+    font-size: 36px;
+    text-align: center;
+  }
+  .followUsBox{
+    text-align: center;
+  }
+}
 /* map css start */
 .mapBox{
   background-color: #451684;
