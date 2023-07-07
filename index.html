@@ -191,7 +191,7 @@
                     </button>
                   </div>
                   <div class="tp-header-action-item d-lg-none">
-                    <button type="button" class="tp-offcanvas-open-btn">
+                    <button style="color: black;" type="button" class="tp-offcanvas-open-btn">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="30"
@@ -260,8 +260,30 @@
                   blending 14k gold, diamond, and other precious stones with
                   sustainably sourced materials from around the world
                 </p>
+                <a href="" style="margin-right: 10px;" class="fuBtn btn mr-3">Get Started Now</a>
+                <a href="" style="background-color: white;color: black;margin-left: 10px;" class="fuBtn btn">Watch Video <i style="font-size: 18px;" class="fa-solid fa-circle-play"></i></a>
+
               </div>
-              <div class="col-6"></div>
+              <div class="col-6 d-lg-block d-md-block d-none">
+                <div style="margin-top: 80px;" class="slidercontainer">
+                  <div class="showSlide">
+                      <img src="assets/img/banner/sliderMain.png" />
+                  </div>
+                  <div class="showSlide">
+                      <img src="https://picsum.photos/id/238/500/500" />
+                  </div>
+          
+                  <div class="showSlide">
+                      <img src="https://picsum.photos/id/239/500/500" />
+                  </div>
+                  <div class="showSlide">
+                      <img src="https://picsum.photos/id/234/500/500" />
+                  </div>
+                  <!-- Navigation arrows -->
+                  <a class="left" onclick="nextSlide(-1)"><i class="fa-regular fa-chevrons-left"></i></a>
+                  <a class="right" onclick="nextSlide(1)"><i class="fa-regular fa-chevrons-right"></i></a>
+              </div>
+              </div>
             </div>
           </div>
         </div>
@@ -638,7 +660,29 @@
     </footer>
     <!-- footer area end -->
 
-    <script></script>
+    <script type="text/javascript">
+      var slide_index = 1;
+      displaySlides(slide_index);
+
+      function nextSlide(n) {
+          displaySlides(slide_index += n);
+      }
+
+      function currentSlide(n) {
+          displaySlides(slide_index = n);
+      }
+
+      function displaySlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("showSlide");
+          if (n > slides.length) { slide_index = 1 }
+          if (n < 1) { slide_index = slides.length }
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          slides[slide_index - 1].style.display = "block";
+      }
+  </script>
 
     <!-- JS here -->
     <script src="assets/js/vendor/jquery.js"></script>
