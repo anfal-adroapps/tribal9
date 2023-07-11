@@ -210,8 +210,8 @@
 }
 @media screen and (max-width:500px) {
   .categorySection .categoryBox{
-    height: 160px;
-    width: 160px;
+    height: max-content;
+    width: 160px !important;
   }
 }
 .categoryBox img{
@@ -324,7 +324,7 @@ letter-spacing: 0.2px;
 .followUsBox .imgDiv{
   position: absolute;
   height: 100%;
-  margin-top: -10%;
+  margin-top: -7%;
 }
 .followUsBox .fuContent{
   margin: 15% 0;
