@@ -326,6 +326,10 @@ letter-spacing: 0.2px;
   height: 100%;
   margin-top: -7%;
 }
+.followUsBox .imgDiv img{
+  height: 80%;
+  margin: auto;
+}
 .followUsBox .fuContent{
   margin: 15% 0;
 }
@@ -355,6 +359,11 @@ letter-spacing: 0.2px;
   .followUsBox .imgDiv{
     position: static;
     margin-top: 0;
+  }
+  .followUsBox .imgDiv img{
+    height: 100%;
+    width: 100%;
+    margin: auto;
   }
   .fuSection{
     margin: 0;
