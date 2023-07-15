@@ -6875,6 +6875,17 @@ body .ui-tooltip {
 .tp-header-sticky.header-sticky.has-dark-logo .logo .logo-dark {
   display: block;
 }
+img.logo-light {
+  width: 30%;
+}
+img.logo-dark {
+  width: 30%;
+}
+@media screen and (max-width:749px) {
+  img.logo-light,img.logo-dark {
+    width: 45%;
+  }
+}
 .tp-header-style-transparent-white .tp-header-action-badge {
   background-color: var(--tp-common-white);
   color: var(--tp-common-black);
