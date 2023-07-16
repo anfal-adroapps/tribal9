@@ -12930,18 +12930,16 @@ div.tp-blog-thumb img {
 /*----------------------------------------*/
 /*  7.10 Contact CSS
 /*----------------------------------------*/
-.tp-contact-wrapper {
-  margin-right: 73px;
-}
+
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .tp-contact-wrapper {
     margin-right: 0;
   }
 }
 .tp-contact-inner {
-  padding: 42px 70px 49px;
-  background: var(--tp-common-white);
-  box-shadow: 0px 30px 70px rgba(1, 15, 28, 0.1);
+  padding: 42px 70px 60px;
+  border: 1px solid lightgray;
+  border-radius: 20px;
 }
 @media (max-width: 575px) {
   .tp-contact-inner {
@@ -12964,29 +12962,35 @@ div.tp-blog-thumb img {
 }
 .tp-contact-input input {
   height: 56px;
-  background: #FFFFFF;
+  background: #ECECEC;
   border: 1px solid #E0E2E3;
   font-size: 14px;
+  border-radius: 8px;
   color: var(--tp-common-black);
 }
 .tp-contact-input input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #95999D;
+  color: black;
+}
+.tp-contact-input textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: black;
 }
 .tp-contact-input input::-moz-placeholder { /* Firefox 19+ */
-  color: #95999D;
+  color: black;
 }
 .tp-contact-input input:-moz-placeholder { /* Firefox 4-18 */
-  color: #95999D;
+  color: black;
 }
 .tp-contact-input input:-ms-input-placeholder { /* IE 10+  Edge*/
-  color: #95999D;
+  color: black;
 }
 .tp-contact-input input::placeholder { /* MODERN BROWSER */
-  color: #95999D;
+  color: black;
 }
 .tp-contact-input textarea {
   height: 165px;
   resize: none;
+  background-color: #ECECEC;
+  border-radius: 8px;
 }
 .tp-contact-input-title label {
   font-size: 14px;
@@ -13081,7 +13085,8 @@ div.tp-blog-thumb img {
   color: var(--tp-common-white);
   background-color: var(--tp-common-black);
   padding: 9px 30px;
-  display: inline-block;
+  float: right;
+  border-radius: 60px;
 }
 .tp-contact-btn:hover {
   color: var(--tp-common-white);
@@ -13143,7 +13148,12 @@ div.tp-blog-thumb img {
   border-color: var(--tp-theme-primary);
   color: var(--tp-common-white);
 }
-
+@media screen and (max-width:749px) {
+  .tp-contact-area{
+    margin-top: 50px;
+  }
+  
+}
 /* map css start */
 .tp-map-wrapper {
   position: relative;
