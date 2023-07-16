@@ -387,7 +387,7 @@ line-height: 150%;
 
 /* ABOUT PAGE CSS START */
 .aboutMain{
-  background-color: #451684;
+  background-color: #000;
   padding: 100px 0px;
   height: 400px;
   margin-bottom: 200px;
@@ -7676,7 +7676,7 @@ img.logo-dark {
   }
 }
 .main-menu.menu-style-3.menu-style-4 > nav > ul > li > a.active{
-  color: white;
+  color: #c1c1c1;
   font-weight: bold;
 }
 .main-menu.menu-style-3.menu-style-4 > nav > ul > li > a {

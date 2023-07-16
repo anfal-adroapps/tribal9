@@ -25,7 +25,12 @@
     <link rel="stylesheet" href="assets/css/spacing.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
-
+  <style>
+    .portfolioBox img{
+        height: 100%;
+        width: 100%;
+    }
+  </style>
   <body>
     <!--[if lte IE 9]>
       <p class="browserupgrade">
@@ -95,7 +100,7 @@
           >
             <div class="offcanvas__logo logo">
               <a href="index.html">
-                <img src="assets/img/logo/TRIBAL 9 LOGO 2.png" alt="logo" />
+                <img class="logo-dark" src="assets/img/Black on Transparent.png" alt="logo" />
               </a>
             </div>
           </div>
@@ -109,7 +114,7 @@
 
     <!-- header area start -->
     <header>
-      <div
+      <div style="height: 70px;"
         id="header-sticky"
         class="tp-header-area tp-header-style-transparent-white tp-header-sticky tp-header-transparent has-dark-logo tp-header-height"
       >
@@ -124,7 +129,7 @@
                         <a href="index.html">Home</a>
                       </li>
                       <li>
-                        <a href="">About Us</a>
+                        <a href="about.html">About Us</a>
                       </li>
                       <li>
                         <a href="gallary.html">Gallery</a>
@@ -142,13 +147,14 @@
                 <div class="logo">
                   <a href="index.html">
                     <img
+                
                       class="logo-light"
-                      src="assets/img/logo/TRIBAL 9 LOGO 2.png"
+                      src="assets/img/White on Transparent.png"
                       alt="logo"
                     />
                     <img
                       class="logo-dark"
-                      src="assets/img/logo/TRIBAL 9 LOGO 2.png"
+                      src="assets/img/Black on Transparent.png"
                       alt="logo"
                     />
                   </a>
@@ -191,7 +197,7 @@
                     </button>
                   </div>
                   <div class="tp-header-action-item d-lg-none">
-                    <button style="color: black;" type="button" class="tp-offcanvas-open-btn">
+                    <button type="button" class="tp-offcanvas-open-btn">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="30"
@@ -230,286 +236,336 @@
     </header>
     <!-- header area end -->
 
-    <main>
-
-      <!-- breadcrumb area start -->
-      <section class="breadcrumb__area include-bg text-center pt-95 pb-50">
-         <div class="container">
-            <div class="row">
-               <div class="col-xxl-12">
-                  <div class="breadcrumb__content p-relative z-index-1">
-                     <h3 class="breadcrumb__title">Keep In Touch with Us</h3>
-                     <div class="breadcrumb__list">
-                        <span><a href="index.html">Home</a></span>
-                        <span>Contact</span>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- breadcrumb area end -->
-
-
-      <!-- contact area start -->
-      <section class="tp-contact-area pb-100">
-         <div class="container">
-            <div class="tp-contact-inner">
-               <div class="row">
-                  <div class="col-xl-9 col-lg-8">
-                     <div class="tp-contact-wrapper">
-                        <h3 class="tp-contact-title">Sent A Message</h3>
-
-                        <div class="tp-contact-form">
-                           <form id="contact-form" action="sendmail.php" method="POST">
-                              <div class="tp-contact-input-wrapper">
-                                 <div class="tp-contact-input-box">
-                                    <div class="tp-contact-input">
-                                       <input name="name" id="name" type="text" placeholder="Shahnewaz Sakil">
-                                    </div>
-                                    <div class="tp-contact-input-title">
-                                       <label for="name">Your Name</label>
-                                    </div>
-                                 </div>
-                                 <div class="tp-contact-input-box">
-                                    <div class="tp-contact-input">
-                                       <input name="email" id="email" type="email" placeholder="tribal9@mail.com">
-                                    </div>
-                                    <div class="tp-contact-input-title">
-                                       <label for="email">Your Email</label>
-                                    </div>
-                                 </div>
-                                 <div class="tp-contact-input-box">
-                                    <div class="tp-contact-input">
-                                       <input name="subject" id="subject" type="text" placeholder="Write your subject">
-                                    </div>
-                                    <div class="tp-contact-input-title">
-                                       <label for="subject">Subject</label>
-                                    </div>
-                                 </div>
-                                 <div class="tp-contact-input-box">
-                                    <div class="tp-contact-input">
-                                      <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
-                                    </div>
-                                    <div class="tp-contact-input-title">
-                                       <label for="message">Your Message</label>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="tp-contact-suggetions mb-20">
-                                 <div class="tp-contact-remeber">
-                                    <input id="remeber" type="checkbox">
-                                    <label for="remeber">Save my name, email, and website in this browser for the next time I comment.</label>
-                                 </div>
-                              </div>
-                              <div class="tp-contact-btn">
-                                 <button type="submit">Send Message</button>
-                              </div>
-                           </form>
-                           <p class="ajax-response"></p>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xl-3 col-lg-4">
-                     <div class="tp-contact-info-wrapper">
-                        <div class="tp-contact-info-item text-center">
-                           <div class="tp-contact-info-icon">
-                              <span class="mx-auto">
-                                 <img src="assets/img/contact/contact-icon-1.png" alt="">
-                              </span>
-                           </div>
-                           <div class="tp-contact-info-content">
-                              <p data-info="mail"><a href="mailto:contact@tribal9.com">contact@tribal9.com</a></p>
-                              <p data-info="phone"><a href="tel:670-413-90-762">+670 413 90 762</a></p>
-                           </div>
-                        </div>
-                        <div class="tp-contact-info-item text-center">
-                           <div class="tp-contact-info-icon">
-                              <span class="mx-auto">
-                                 <img src="assets/img/contact/contact-icon-2.png" alt="">
-                              </span>
-                           </div>
-                           <div class="tp-contact-info-content">
-                              <p>
-                                 <a href="https://www.google.com/maps/place/New+York,+NY,+USA/@40.6976637,-74.1197638,11z/data=!3m1!4b1!4m6!3m5!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127753!4d-74.0059728!16zL20vMDJfMjg2" target="_blank">
-                                    84 sleepy hollow st. <br> jamaica, New York 1432
-                                 </a>
-                              </p>
-                           </div>
-                        </div>
-                        <div class="tp-contact-info-item text-center">
-                           <div class="tp-contact-info-icon">
-                              <span class="mx-auto">
-                                 <img src="assets/img/contact/contact-icon-3.png" alt="">
-                              </span>
-                           </div>
-                           <div class="tp-contact-info-content">
-                              <div class="tp-contact-social-wrapper mt-5">
-                                 <h4 class="tp-contact-social-title">Find on social media</h4>
-
-                                 <div class="tp-contact-social-icon">
-                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- contact area end -->
-
-      <!-- map area start -->
-      <section class="tp-map-area pb-120">
-         <div class="container">
-            <div class="row">
-               <div class="col-xl-12">
-                  <div class="tp-map-wrapper">
-                     <div class="tp-map-hotspot">
-                        <span class="tp-hotspot tp-pulse-border">
-                           <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <circle cx="6" cy="6" r="6" fill="#821F40"/>
-                           </svg>
-                        </span>
-                     </div>
-                     <div class="tp-map-iframe">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830894612!2d-74.11976383964465!3d40.69766374865766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1678114595329!5m2!1sen!2sbd"></iframe>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- map area end -->
-
-   </main>
-
-    <!-- footer area start -->
-    <footer>
-      <div
-        class="tp-footer-area tp-footer-style-2 tp-footer-style-3 tp-footer-style-4"
-        data-bg-color="#F5F5F5"
-      >
-        <div class="tp-footer-top pt-50 pb-40">
-          <div class="container">
-            <!-- <div
-              style="border-bottom: 1px solid lightgray"
-              class="row pt-3 pb-50"
-            >
-              <div class="col-lg-10 col-md-10 col-12">
-                <h3>
-                  <span style="color: #451684">2K+</span> Store joined us. When
-                  are you joining?
-                </h3>
-              </div>
-              <div class="col-lg-2 col-md-2 col-12 text-center">
-                <a href="" class="fuBtn btn">Get started</a>
-              </div>
-            </div> -->
-            <div class="row pt-50">
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-5">
-                <div class="tp-footer-widget footer-col-4-3 mb-50">
-                  <h4
-                    style="
-                      font-size: 18px;
-                      font-style: normal;
-                      font-weight: 700;
-                    "
-                    class="tp-footer-widget-title"
-                  >
-                    Quick Links
-                  </h4>
-                  <div class="tp-footer-widget-content">
-                    <ul>
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="about.html">About us</a></li>
-                      <li><a href="contact.html">Contact Us</a></li>
-                      <li><a href="gallary.html">Gallery</a></li>
-                      <li><a href="#">Privacy & Policy</a></li>
-                      <li><a href="#">Terms & Condition</a></li>
-                    </ul>
-                  </div>
+    <!-- gallary main -->
+    <div style="padding: 0 !important;" class="aboutMain">
+        <div class="container">
+            <div style="padding: 100px 0px;" class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="aboutBoxLeft">
+                        <h2 style="font-family: Italiana;font-weight: 400;">Contact Us</h2>
+                        <p>Lorem ipsum, libero et luctus molestie, turpis mi sagittis nisl, a scelerisque leo nulla et lectus pendisse dictum posuere elit, in congue nisl varius lentesque a tellus eget quam varius aliquet.</p>
+                    </div>
                 </div>
-              </div>
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-5">
-                <div class="tp-footer-widget footer-col-4-3 mb-50">
-                  <h4
-                    style="
-                      font-size: 18px;
-                      font-style: normal;
-                      font-weight: 700;
-                    "
-                    class="tp-footer-widget-title"
-                  >
-                    Contact
-                  </h4>
-                  <div class="tp-footer-widget-content">
-                    <ul style="list-style-type: none">
-                      <a
-                        style="font-weight: bold; font-size: 16px"
-                        class="d-block"
-                        href="#"
-                        ><i
-                          style="
-                            font-size: 16px;
-                            background-color: #451684;
-                            padding: 12px;
-                            border-radius: 50px;
-                            color: white;
-                            margin-bottom: 15px;
-                          "
-                          class="fa-brands fa-whatsapp"
-                        ></i>
-                          +91 4424640699</a
-                      >
-
-                      <a
-                        style="font-weight: bold; font-size: 16px"
-                        class="d-block"
-                        href="#"
-                        ><i
-                          style="
-                            font-size: 16px;
-                            background-color: #451684;
-                            padding: 10px;
-                            border-radius: 50px;
-                            color: white;
-                          "
-                          class="fa-solid fa-envelope"
-                        ></i>
-                        Tribe9@yahoo.com</a
-                      >
-                    </ul>
-                  </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                     <img style="height: 100%; width: 100%;" src="assets/img/banner/contactUs.jpg" alt="">
                 </div>
-              </div>
+            </div>
+        </div>
+    </div>
+
+
+
+          <!-- contact area start -->
+          <section class="tp-contact-area pb-100">
+            <div class="container">
+               <div class="tp-contact-inner">
+                  <div class="row">
+                     <div class="col-xl-9 col-lg-8">
+                        <div class="tp-contact-wrapper">
+                           <h3 class="tp-contact-title">Sent A Message</h3>
+   
+                           <div class="tp-contact-form">
+                              <form id="contact-form" action="sendmail.php" method="POST">
+                                 <div class="tp-contact-input-wrapper">
+                                    <div class="tp-contact-input-box">
+                                       <div class="tp-contact-input">
+                                          <input name="name" id="name" type="text" placeholder="Shahnewaz Sakil">
+                                       </div>
+                                       <div class="tp-contact-input-title">
+                                          <label for="name">Your Name</label>
+                                       </div>
+                                    </div>
+                                    <div class="tp-contact-input-box">
+                                       <div class="tp-contact-input">
+                                          <input name="email" id="email" type="email" placeholder="tribal9@mail.com">
+                                       </div>
+                                       <div class="tp-contact-input-title">
+                                          <label for="email">Your Email</label>
+                                       </div>
+                                    </div>
+                                    <div class="tp-contact-input-box">
+                                       <div class="tp-contact-input">
+                                          <input name="subject" id="subject" type="text" placeholder="Write your subject">
+                                       </div>
+                                       <div class="tp-contact-input-title">
+                                          <label for="subject">Subject</label>
+                                       </div>
+                                    </div>
+                                    <div class="tp-contact-input-box">
+                                       <div class="tp-contact-input">
+                                         <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
+                                       </div>
+                                       <div class="tp-contact-input-title">
+                                          <label for="message">Your Message</label>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="tp-contact-suggetions mb-20">
+                                    <div class="tp-contact-remeber">
+                                      
+                                    </div>
+                                 </div>
+                                 <div class="tp-contact-btn">
+                                    <button type="submit">Send Message</button>
+                                 </div>
+                              </form>
+                              <p class="ajax-response"></p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-lg-4">
+                        <div class="tp-contact-info-wrapper">
+                           <div class="tp-contact-info-item text-center">
+                              <div class="tp-contact-info-icon">
+                                 <span class="mx-auto">
+                                    <img src="assets/img/contact/contact-icon-1.png" alt="">
+                                 </span>
+                              </div>
+                              <div class="tp-contact-info-content">
+                                 <p data-info="mail"><a href="mailto:contact@tribal9.com">contact@tribal9.com</a></p>
+                                 <p data-info="phone"><a href="tel:670-413-90-762">+670 413 90 762</a></p>
+                              </div>
+                           </div>
+                           <div class="tp-contact-info-item text-center">
+                              <div class="tp-contact-info-icon">
+                                 <span class="mx-auto">
+                                    <img src="assets/img/contact/contact-icon-2.png" alt="">
+                                 </span>
+                              </div>
+                              <div class="tp-contact-info-content">
+                                 <p>
+                                    <a href="https://www.google.com/maps/place/New+York,+NY,+USA/@40.6976637,-74.1197638,11z/data=!3m1!4b1!4m6!3m5!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127753!4d-74.0059728!16zL20vMDJfMjg2" target="_blank">
+                                       84 sleepy hollow st. <br> jamaica, New York 1432
+                                    </a>
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="tp-contact-info-item text-center">
+                              <div class="tp-contact-info-icon">
+                                 <span class="mx-auto">
+                                    <img src="assets/img/contact/contact-icon-3.png" alt="">
+                                 </span>
+                              </div>
+                              <div class="tp-contact-info-content">
+                                 <div class="tp-contact-social-wrapper mt-5">
+                                    <h4 class="tp-contact-social-title">Find on social media</h4>
+   
+                                    <div class="tp-contact-social-icon">
+                                       <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                       <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                       <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- contact area end -->
+
+
+
+    <!-- follow us start -->
+    <section class="fuSection">
+      <div class="container followUsBox">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="fuContent">
+              <h2 class="uniH2">Follow us on instagram</h2>
+              <h2>#tribal9</h2>
+              <a target="_blank" href="https://www.instagram.com/tribal9_silver_collection/" class="btn fuBtn">Visit instagram page</a>
             </div>
           </div>
-        </div>
-        <div class="tp-footer-bottom">
-          <div class="container">
-            <div class="tp-footer-bottom-wrapper">
-              <div class="row align-items-center">
-                <div class="col-md-6">
-                  <div class="tp-footer-copyright">
-                    <p>
-                      copyright © Tribal9 2023</a>.
-                    </p>
-                  </div>
-                </div>
-              </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="imgDiv">
+              <img src="assets/img/banner/instaPage.png" alt="">
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- footer area end -->
+    </section>
+    <!-- follow us end -->
 
-    <script></script>
+    <!-- map start -->
+    <div class="container-fluid my-5">
+      <div class="row">
+        <div class="col-4 mapBox d-md-block d-lg-block d-none">
+          <div class="top py-5">
+            <img src="assets/img/logo/TRIBAL 9 LOGO 2.png" alt="" />
+          </div>
+          <div class="bottom pb-5">
+            <i
+              style="
+                background-color: #ad9a80;
+                color: white;
+                padding: 15px;
+                border-radius: 50%;
+                font-size: 20px;
+              "
+              class="fa-solid fa-location-dot mb-3"
+            ></i>
+            <p style="color: white">
+              1st Floor, Aashiana Bldg, 87, Linking Road, Nr Standard Chartered
+              Bank, Santacruz (west)
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-8 col-12">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.796515274978!2d72.82945957071968!3d19.07268221260946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c90e809e809f%3A0x5f6f95b1bfe65da7!2s87%2C%20Linking%20Rd%2C%20Khar%20West%2C%20Mumbai%2C%20Maharashtra%20400052!5e0!3m2!1sen!2sin!4v1688584634789!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- map end -->
+
+        <!-- footer area start -->
+        <footer>
+          <div
+            class="tp-footer-area tp-footer-style-2 tp-footer-style-3 tp-footer-style-4"
+            data-bg-color="#F5F5F5"
+          >
+            <div class="tp-footer-top pt-50 pb-40">
+              <div class="container">
+                <!-- <div
+                  style="border-bottom: 1px solid lightgray"
+                  class="row pt-3 pb-50"
+                >
+                  <div class="col-lg-10 col-md-10 col-12">
+                    <h3>
+                      <span style="color: #451684">2K+</span> Store joined us. When
+                      are you joining?
+                    </h3>
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-12 text-center">
+                    <a href="" class="fuBtn btn">Get started</a>
+                  </div>
+                </div> -->
+                <div class="row pt-50">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-5">
+                    <div class="tp-footer-widget footer-col-4-3 mb-50">
+                      <h4
+                        style="
+                          font-size: 18px;
+                          font-style: normal;
+                          font-weight: 700;
+                        "
+                        class="tp-footer-widget-title"
+                      >
+                        Quick Links
+                      </h4>
+                      <div class="tp-footer-widget-content">
+                        <ul>
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="about.html">About us</a></li>
+                          <li><a href="contact.html">Contact Us</a></li>
+                          <li><a href="gallary.html">Gallery</a></li>
+                          <li><a href="#">Privacy & Policy</a></li>
+                          <li><a href="#">Terms & Condition</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-5">
+                    <div class="tp-footer-widget footer-col-4-3 mb-50">
+                      <h4
+                        style="
+                          font-size: 18px;
+                          font-style: normal;
+                          font-weight: 700;
+                        "
+                        class="tp-footer-widget-title"
+                      >
+                        Contact
+                      </h4>
+                      <div class="tp-footer-widget-content">
+                        <ul style="list-style-type: none">
+                          <a
+                            style="font-weight: bold; font-size: 16px"
+                            class="d-block"
+                            href="#"
+                            ><i
+                              style="
+                                font-size: 16px;
+                                background-color: #451684;
+                                padding: 12px;
+                                border-radius: 50px;
+                                color: white;
+                                margin-bottom: 15px;
+                              "
+                              class="fa-brands fa-whatsapp"
+                            ></i>
+                              +91 4424640699</a
+                          >
+    
+                          <a
+                            style="font-weight: bold; font-size: 16px"
+                            class="d-block"
+                            href="#"
+                            ><i
+                              style="
+                                font-size: 16px;
+                                background-color: #451684;
+                                padding: 10px;
+                                border-radius: 50px;
+                                color: white;
+                              "
+                              class="fa-solid fa-envelope"
+                            ></i>
+                            Tribe9@yahoo.com</a
+                          >
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tp-footer-bottom">
+              <div class="container">
+                <div class="tp-footer-bottom-wrapper">
+                  <div class="row align-items-center">
+                    <div class="col-md-6">
+                      <div class="tp-footer-copyright">
+                        <p>
+                          copyright © Tribal9 2023</a>.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- footer area end -->
+   
+    <div style="position: fixed;top: 25%;width: 100%; z-index: 10000;" id="modal01" class="w3-modal" onclick="this.style.display='none'">
+      <div class="text-center">
+        <img style="background-color:white;padding: 50px;display: none;width: 300px;height: 330px;" id="img01">
+        <p style="display: none;margin-top: -25px;" id="modalp">tap to remove</p>
+      </div>
+    </div>
+
+
+    <script>
+            function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        document.getElementById("modalp").style.display = "block";
+        document.getElementById("img01").style.display = "block";
+        document.getElementById("img01").style.margin = "auto";
+      }
+    </script>
 
     <!-- JS here -->
     <script src="assets/js/vendor/jquery.js"></script>
