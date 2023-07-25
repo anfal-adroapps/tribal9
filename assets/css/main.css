@@ -131,7 +131,7 @@
   position: absolute;
   width: auto;
   padding: 16px 22px;
-  background-color: white;
+  background-color: rgb(227 225 225);
   color: black;
   font-weight: bold;
   font-size: 18px;
@@ -216,6 +216,8 @@
 }
 .categoryBox img{
   margin: auto;
+  height: 100%;
+  width: 100%;
 }
 .boxTop{
   background-color: #451684;
@@ -310,7 +312,7 @@ line-height: normal;
   padding: 30px;
 }
 .fuSection{
-  margin: 200px 0;
+  margin: 100px 0;
 }
 .followUsBox h2{
   color: #FFF;

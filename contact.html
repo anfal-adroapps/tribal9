@@ -30,6 +30,19 @@
         height: 100%;
         width: 100%;
     }
+    .dif-col-6{
+      border-right: 1px solid lightgray;
+    }
+    #contact-form i{
+      font-size: 60px;
+      height: 10%;
+      width: 100%;
+    }
+    @media screen and (max-width:749px){
+      .dif-col-6 i{
+        margin-bottom: 50px;
+      }
+    }
   </style>
   <body>
     <!--[if lte IE 9]>
@@ -177,7 +190,7 @@
                       type="button"
                       class="tp-header-action-btn cartmini-open-btn"
                     >
-                      <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                      <a href="https://wa.me/9176700999"><i class="fa-brands fa-whatsapp"></i></a>
                     </button>
                   </div>
                   <div class="tp-header-action-item d-none d-sm-block">
@@ -185,7 +198,7 @@
                       type="button"
                       class="tp-header-action-btn cartmini-open-btn"
                     >
-                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      <a target="_blank" href="https://www.instagram.com/tribal9_silver_collection/"><i class="fa-brands fa-instagram"></i></a>
                     </button>
                   </div>
                   <div class="tp-header-action-item d-none d-sm-block">
@@ -193,7 +206,7 @@
                       type="button"
                       class="tp-header-action-btn cartmini-open-btn"
                     >
-                      <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                      <a href="mailto:Tribal9.silvercollection@gmail.com"><i class="fa-solid fa-envelope"></i></a>
                     </button>
                   </div>
                   <div class="tp-header-action-item d-lg-none">
@@ -265,46 +278,21 @@
                       <div class="tp-contact-inner">
                         <div class="tp-contact-wrapper">   
                            <div class="tp-contact-form">
-                              <form id="contact-form" action="sendmail.php" method="POST">
+                              <form id="contact-form">
                                  <div class="tp-contact-input-wrapper">
                                   <div class="row">
-                                    <div class="col-lg-6 col-xl-6 col-md-6 col-12 mx-auto my-2">
-                                      <div class="tp-contact-input-box">
-                                        <div class="tp-contact-input">
-                                           <input name="name" id="name" type="text" placeholder="Name">
-                                        </div>
-                                     </div>
+                                    <div class="col-lg-6 col-xl-6 col-md-6 col-12 mx-auto my-2 dif-col-6">
+                                      <a target="_blank" href="https://wa.me/9176700999">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                      </a>
                                     </div>
 
                                     <div class="col-lg-6 col-xl-6 col-md-6 col-12 mx-auto my-2">
-                                      <div class="tp-contact-input-box">
-                                        <div class="tp-contact-input">
-                                           <input name="email" id="email" type="email" placeholder="Email">
-                                        </div>
-                                     </div>
+                                      <a target="_blank" href="mailto:Tribal9.silvercollection@gmail.com">
+                                        <i class="fas fa-envelope"></i>
+                                      </a>
                                     </div>
-
-                                    <div class="col-12 mx-auto mt-2">
-                                      <div class="tp-contact-input-box">
-                                        <div class="tp-contact-input">
-                                          <textarea id="message" name="message" placeholder="message type here..."></textarea>
-                                        </div>
-                                     </div>
-                                    </div>
-
-                                  </div>
-
-                                 </div>
-                                 <div class="tp-contact-suggetions mb-20">
-                                    <div class="tp-contact-remeber">
-                                      
-                                    </div>
-                                 </div>
-                                 <div class="tp-contact-btn">
-                                    <button type="submit">Send Message</button>
-                                 </div>
                               </form>
-                              <p class="ajax-response"></p>
                            </div>
                         </div>
                      </div>
