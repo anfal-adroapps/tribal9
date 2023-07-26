@@ -290,8 +290,12 @@ line-height: normal;
 .browseBox img{
   height: 100%;
   width: 100%;
+  aspect-ratio: 3/3;
+  object-fit: cover;
 }
-
+.browseBox .col-6{
+  margin: 10px 0;
+}
 /* testimonial cs */
 
 .testiCustomContainer .box{
