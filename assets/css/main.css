@@ -115,6 +115,9 @@
 /*----------------------------------------*/
 
 /* custom css */
+html{
+  scroll-behavior: smooth;
+}
 .showSlide {
   display: none
 }
