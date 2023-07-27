@@ -399,7 +399,7 @@ line-height: 150%;
   background-color: #000;
   padding: 100px 0px;
   height: 400px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 .aboutBoxLeft h2, .aboutBoxLeft p{
   color: white !important;
@@ -6892,7 +6892,7 @@ img.logo-dark {
 }
 @media screen and (max-width:749px) {
   img.logo-light,img.logo-dark {
-    width: 45%;
+    width: 55%;
   }
 }
 .tp-header-style-transparent-white .tp-header-action-badge {
@@ -6914,7 +6914,7 @@ img.logo-dark {
   /* padding: 10px; */
   height: 35px;
   width: 35px;
-  background: #ffffff2e;
+  background: #ffffff;
 }
 .tp-header-style-transparent-white .tp-header-action-btn:hover {
   color: rgb(226, 224, 224);
